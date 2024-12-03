@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+
+    <div id="calculator">
+      <input maxlength="33" class="screen" type="text" readonly />
+      <div class="content">
+        <div id="numbers">
+          <div data-key="Escape Backspace" class="numbersKey resetButton">
+            CE
+          </div>
+          <div data-key="NumpadDivide" class="numbersKey divisionButton">/</div>
+          <div data-key="NumpadMultiply" class="multiplyButton">*</div>
+          <div data-key="Numpad7" class="numbersKey seven">7</div>
+          <div data-key="Numpad8" class="numbersKey eight">8</div>
+          <div data-key="Numpad9" class="numbersKey nine">9</div>
+          <div data-key="Numpad4" class="numbersKey four">4</div>
+          <div data-key="Numpad5" class="numbersKey five">5</div>
+          <div data-key="Numpad6" class="numbersKey six">6</div>
+          <div data-key="Numpad1" class="numbersKey one">1</div>
+          <div data-key="Numpad2" class="numbersKey two">2</div>
+          <div data-key="Numpad3" class="numbersKey three">3</div>
+          <div data-key="Numpad0" class="numbersKey zero">0</div>
+          <div data-key="Period" class="numbersKey point">.</div>
+        </div>
+        <div class="sideBar">
+          <div data-key="NumpadSubtract" class="sideButton minusButton">-</div>
+          <div data-key="NumpadAdd" class="sideButton sumButton">+</div>
+          <div data-key="NumpadEnter Enter" class="sideButton equalButton">
+            =
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

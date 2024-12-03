@@ -1,0 +1,140 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#calculator {
+  width: 325px;
+  height: 500px;
+  border: solid 2px black;
+  background-color: grey;
+  justify-self: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.screen {
+  width: 310px;
+  height: 50px;
+  border: solid black 2px;
+  margin-top: 3px;
+  background-color: white;
+  font-size: 27px;
+  display: flex;
+  justify-items: end;
+  justify-self: center;
+  border-radius: 10px;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  height: 440px;
+  width: 250px;
+  justify-items: center;
+  align-items: center;
+}
+
+.numbersKey,
+.multiplyButton {
+  padding: 25px 30px;
+  background-color: skyblue;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.numbersKey:hover {
+  background-color: rgb(127, 219, 255);
+}
+
+.numbersKey:active {
+  background-color: rgb(98, 206, 248);
+}
+
+.zero {
+  grid-column: span 2;
+  padding: 25px 71.5px;
+}
+
+.point {
+  padding: 25px 33px;
+}
+
+.resetButton {
+  padding: 25px 20px;
+  background-color: rgb(255, 0, 0);
+}
+
+.resetButton:hover {
+  background-color: hwb(2 0% 16%);
+}
+
+.resetButton:active {
+  background-color: hwb(2 12% 0%);
+}
+
+.divisionButton {
+  padding: 25px 33px;
+}
+
+.content {
+  display: flex;
+}
+
+.sideBar {
+  display: grid;
+  width: 70px;
+  height: 432px;
+  text-align: center;
+}
+
+.sideButton {
+  color: white;
+  background-color: orange;
+  margin-top: 4px;
+  align-self: center;
+  padding: 56px 0;
+  padding-bottom: 62.7px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.multiplyButton,
+.divisionButton {
+  background-color: orange;
+}
+
+.divisionButton:hover,
+.multiplyButton:hover,
+.minusButton:hover,
+.sumButton:hover {
+  background-color: rgb(255, 132, 0);
+}
+
+.divisionButton:active,
+.multiplyButton:active,
+.minusButton:active,
+.sumButton:active {
+  background-color: hwb(31 8% 0%);
+}
+
+.equalButton {
+  background-color: rgb(83, 83, 83);
+}
+
+.equalButton:hover {
+  background-color: rgb(74, 74, 74);
+}
+
+.equalButton:active {
+  background-color: hwb(0 33% 71%);
+}
